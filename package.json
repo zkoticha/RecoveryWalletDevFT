@@ -1,0 +1,27 @@
+{
+  "name": "recovwallet",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@blueprintjs/core": "^1.27.0",
+    "crypto-js": "^3.1.9-1",
+    "expect": "^21.2.1",
+    "expect.js": "^0.3.1",
+    "iota-generate-seed": "^1.0.0",
+    "iota.lib.js": "^0.4.0",
+    "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-dropzone": "^4.1.2",
+    "react-native": "^0.44.3",
+    "react-scripts": "^1.0.13",
+    "sjcl": "^1.0.7",
+    "web3": "^0.20.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

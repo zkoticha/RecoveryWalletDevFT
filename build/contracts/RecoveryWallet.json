@@ -1,0 +1,220 @@
+{
+  "contract_name": "RecoveryWallet",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amt",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "password",
+          "type": "bytes"
+        }
+      ],
+      "name": "recoverWithPass",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "hashedPassword",
+          "type": "bytes32"
+        }
+      ],
+      "name": "setPass",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "owner_",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "walletOwner",
+          "type": "address"
+        }
+      ],
+      "name": "RecoveryWalletCreated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "recoveryPass",
+          "type": "bytes32"
+        }
+      ],
+      "name": "Recovered",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b6040516020806103c6833981016040528080519150505b60018054600160a060020a031916600160a060020a0383811691909117918290557f96d0def76d3a787576ddd5906b5b4d436030a72cbc76c39ab30188239e10878d9116604051600160a060020a03909116815260200160405180910390a15b505b61032f806100976000396000f3006060604052361561005f5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632e1a7d4d81146100635780638da5cb5b1461007b578063ebae2d17146100aa578063fa081edb146100fd575b5b5b005b341561006e57600080fd5b61005f600435610115565b005b341561008657600080fd5b61008e61017c565b604051600160a060020a03909116815260200160405180910390f35b34156100b557600080fd5b61005f60046024813581810190830135806020601f8201819004810201604051908101604052818152929190602084018383808284375094965061018b95505050505050565b005b341561010857600080fd5b61005f6004356102df565b005b600160a060020a0330163181111561012c57600080fd5b60015432600160a060020a0390811691161461014757600080fd5b600160a060020a03321681156108fc0282604051600060405180830381858888f19350505050151561017857600080fd5b5b50565b600154600160a060020a031681565b600054816040518082805190602001908083835b602083106101bf57805182525b601f19909201916020918201910161019f565b6001836020036101000a0380198251168184511617909252505050919091019250604091505051908190039020141561021f576001805473ffffffffffffffffffffffffffffffffffffffff191632600160a060020a0316179055610224565b600080fd5b6001805473ffffffffffffffffffffffffffffffffffffffff191632600160a060020a03161790557fc3f38a13e0193f47debb0091b75a1d8c091ec91bef2f75630ee59a2e7d86c389816040518082805190602001908083835b6020831061029e57805182525b601f19909201916020918201910161027e565b6001836020036101000a0380198251168184511617909252505050919091019250604091505051809103902060405190815260200160405180910390a15b50565b60015433600160a060020a039081169116146102fa57600080fd5b60008190555b505600a165627a7a72305820a07144e97ceb19c2043c3afde27b870f65a21f42a5afa0d3c88adbac180598550029",
+  "networks": {
+    "1506713955476": {
+      "events": {},
+      "links": {},
+      "address": "0x7c391d6a8be7c02c9716dbe9db2ed850008c6bcb",
+      "updated_at": 1506714310894
+    },
+    "1506716771574": {
+      "events": {},
+      "links": {},
+      "address": "0x82a674c76d023f755f92be576dc484c6e7a4d467",
+      "updated_at": 1506716777184
+    },
+    "1506718746414": {
+      "events": {},
+      "links": {},
+      "address": "0xe85c44009796ecdcf98604cb6e383b51ff23d108",
+      "updated_at": 1506718978363
+    },
+    "1506719351566": {
+      "events": {},
+      "links": {},
+      "address": "0xb9c44bc73d344d621ab45c3789d3c0dc0bec2da3",
+      "updated_at": 1506719378031
+    },
+    "1506721150332": {
+      "events": {
+        "0xd64104640f23603c99c2ece01627848352b5e83b279b4c75c00b8de9f50400bf": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "walletOwner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "recoveryPass",
+              "type": "bytes32"
+            }
+          ],
+          "name": "RecoveryWalletCreated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x33e91ff587271892ebcaec4e60782daad9feabd1",
+      "updated_at": 1506721165828
+    },
+    "1506722479341": {
+      "events": {
+        "0xd64104640f23603c99c2ece01627848352b5e83b279b4c75c00b8de9f50400bf": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "walletOwner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "recoveryPass",
+              "type": "bytes32"
+            }
+          ],
+          "name": "RecoveryWalletCreated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x0adeefc5a2b4dda7163dbf0b32d745046f287126",
+      "updated_at": 1506722642634
+    },
+    "1506726233775": {
+      "events": {
+        "0xd64104640f23603c99c2ece01627848352b5e83b279b4c75c00b8de9f50400bf": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "walletOwner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "recoveryPass",
+              "type": "bytes32"
+            }
+          ],
+          "name": "RecoveryWalletCreated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x5fc0f107f3a082be32b6c96e56d4a481f754007a",
+      "updated_at": 1506726284282
+    },
+    "1506727110497": {
+      "events": {
+        "0xd64104640f23603c99c2ece01627848352b5e83b279b4c75c00b8de9f50400bf": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "walletOwner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "recoveryPass",
+              "type": "bytes32"
+            }
+          ],
+          "name": "RecoveryWalletCreated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x48ef627f7b94f36abed084e75e321d6b2ce0bcaf",
+      "updated_at": 1506727122652
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1506730983799
+}
